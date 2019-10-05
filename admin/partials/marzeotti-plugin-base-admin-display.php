@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Provide a admin area view for the plugin
  *
@@ -11,6 +10,7 @@
  * @package    Marzeotti_Plugin_Base
  * @subpackage Marzeotti_Plugin_Base/admin/partials
  */
+
 ?>
 
 <!-- This file should primarily consist of HTML with a little bit of PHP. -->

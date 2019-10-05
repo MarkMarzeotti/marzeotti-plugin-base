@@ -89,6 +89,14 @@
 		</properties>
 	</rule>
 
+	<!-- Verify that everything in the global namespace is prefixed with a theme specific prefix.
+		 Multiple valid prefixes can be provided as a comma-delimited list. -->
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array" value="mpb" />
+		</properties>
+	</rule>
+
 
 	<!--
 	#############################################################################
@@ -119,6 +127,13 @@
 		<exclude name="PHPCompatibility.PHP.NewFunctions.array_replace_recursiveFound"/>
 
 		<exclude name="PHPCompatibility.PHP.NewInterfaces.jsonserializableFound"/>
+	</rule>
+
+	<!-- Whitelist the WP Core mysql_to_rfc3339() function. -->
+	<rule ref="PHPCompatibility.Extensions.RemovedExtensions">
+		<properties>
+			<property name="functionWhitelist" type="array" value="mysql_to_rfc3339"/>
+		</properties>
 	</rule>
 
 </ruleset>
