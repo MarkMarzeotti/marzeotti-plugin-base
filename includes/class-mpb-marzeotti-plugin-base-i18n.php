@@ -8,8 +8,8 @@
  * @link       https://markmarzeotti.com
  * @since      1.0.0
  *
- * @package    Marzeotti_Plugin_Base
- * @subpackage Marzeotti_Plugin_Base/includes
+ * @package    MPB_Marzeotti_Plugin_Base
+ * @subpackage MPB_Marzeotti_Plugin_Base/includes
  */
 
 /**
@@ -19,11 +19,11 @@
  * so that it is ready for translation.
  *
  * @since      1.0.0
- * @package    Marzeotti_Plugin_Base
- * @subpackage Marzeotti_Plugin_Base/includes
+ * @package    MPB_Marzeotti_Plugin_Base
+ * @subpackage MPB_Marzeotti_Plugin_Base/includes
  * @author     Mark Marzeotti <mark@markmarzeotti.com>
  */
-class Marzeotti_Plugin_Base_i18n {
+class MPB_Marzeotti_Plugin_Base_i18n {
 
 
 	/**

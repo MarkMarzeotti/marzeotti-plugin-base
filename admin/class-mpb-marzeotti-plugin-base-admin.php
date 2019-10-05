@@ -5,8 +5,8 @@
  * @link       https://markmarzeotti.com
  * @since      1.0.0
  *
- * @package    Marzeotti_Plugin_Base
- * @subpackage Marzeotti_Plugin_Base/admin
+ * @package    MPB_Marzeotti_Plugin_Base
+ * @subpackage MPB_Marzeotti_Plugin_Base/admin
  */
 
 /**
@@ -15,11 +15,11 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the admin-specific stylesheet and JavaScript.
  *
- * @package    Marzeotti_Plugin_Base
- * @subpackage Marzeotti_Plugin_Base/admin
+ * @package    MPB_Marzeotti_Plugin_Base
+ * @subpackage MPB_Marzeotti_Plugin_Base/admin
  * @author     Mark Marzeotti <mark@markmarzeotti.com>
  */
-class Marzeotti_Plugin_Base_Admin {
+class MPB_Marzeotti_Plugin_Base_Admin {
 
 	/**
 	 * The ID of this plugin.
@@ -64,10 +64,10 @@ class Marzeotti_Plugin_Base_Admin {
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in Marzeotti_Plugin_Base_Loader as all of the hooks are defined
+		 * defined in MPB_Marzeotti_Plugin_Base_Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The Marzeotti_Plugin_Base_Loader will then create the relationship
+		 * The MPB_Marzeotti_Plugin_Base_Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
@@ -87,10 +87,10 @@ class Marzeotti_Plugin_Base_Admin {
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in Marzeotti_Plugin_Base_Loader as all of the hooks are defined
+		 * defined in MPB_Marzeotti_Plugin_Base_Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The Marzeotti_Plugin_Base_Loader will then create the relationship
+		 * The MPB_Marzeotti_Plugin_Base_Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */

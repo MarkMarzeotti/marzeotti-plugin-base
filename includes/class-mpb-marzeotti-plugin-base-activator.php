@@ -5,8 +5,8 @@
  * @link       https://markmarzeotti.com
  * @since      1.0.0
  *
- * @package    Marzeotti_Plugin_Base
- * @subpackage Marzeotti_Plugin_Base/includes
+ * @package    MPB_Marzeotti_Plugin_Base
+ * @subpackage MPB_Marzeotti_Plugin_Base/includes
  */
 
 /**
@@ -15,11 +15,11 @@
  * This class defines all code necessary to run during the plugin's activation.
  *
  * @since      1.0.0
- * @package    Marzeotti_Plugin_Base
- * @subpackage Marzeotti_Plugin_Base/includes
+ * @package    MPB_Marzeotti_Plugin_Base
+ * @subpackage MPB_Marzeotti_Plugin_Base/includes
  * @author     Mark Marzeotti <mark@markmarzeotti.com>
  */
-class Marzeotti_Plugin_Base_Activator {
+class MPB_Marzeotti_Plugin_Base_Activator {
 
 	/**
 	 * Short Description. (use period)

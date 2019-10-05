@@ -7,8 +7,8 @@
  * @link       https://markmarzeotti.com
  * @since      1.0.0
  *
- * @package    Marzeotti_Plugin_Base
- * @subpackage Marzeotti_Plugin_Base/admin/partials
+ * @package    MPB_Marzeotti_Plugin_Base
+ * @subpackage MPB_Marzeotti_Plugin_Base/admin/partials
  */
 
 ?>

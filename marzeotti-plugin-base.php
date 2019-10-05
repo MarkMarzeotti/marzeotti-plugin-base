@@ -9,7 +9,7 @@
  *
  * @link              https://markmarzeotti.com
  * @since             1.0.0
- * @package           Marzeotti_Plugin_Base
+ * @package           MPB_Marzeotti_Plugin_Base
  *
  * @wordpress-plugin
  * Plugin Name:       Marzeotti Plugin Base
@@ -34,34 +34,34 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'MARZEOTTI_PLUGIN_BASE_VERSION', '1.0.0' );
+define( 'MPB_MARZEOTTI_PLUGIN_BASE_VERSION', '1.0.0' );
 
 /**
  * The code that runs during plugin activation.
- * This action is documented in includes/class-marzeotti-plugin-base-activator.php
+ * This action is documented in includes/class-mpb-marzeotti-plugin-base-activator.php
  */
-function activate_marzeotti_plugin_base() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-marzeotti-plugin-base-activator.php';
-	Marzeotti_Plugin_Base_Activator::activate();
+function mpb_activate_marzeotti_plugin_base() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-mpb-marzeotti-plugin-base-activator.php';
+	MPB_Marzeotti_Plugin_Base_Activator::activate();
 }
 
 /**
  * The code that runs during plugin deactivation.
- * This action is documented in includes/class-marzeotti-plugin-base-deactivator.php
+ * This action is documented in includes/class-mpb-marzeotti-plugin-base-deactivator.php
  */
-function deactivate_marzeotti_plugin_base() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-marzeotti-plugin-base-deactivator.php';
-	Marzeotti_Plugin_Base_Deactivator::deactivate();
+function mpb_deactivate_marzeotti_plugin_base() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-mpb-marzeotti-plugin-base-deactivator.php';
+	MPB_Marzeotti_Plugin_Base_Deactivator::deactivate();
 }
 
-register_activation_hook( __FILE__, 'activate_marzeotti_plugin_base' );
-register_deactivation_hook( __FILE__, 'deactivate_marzeotti_plugin_base' );
+register_activation_hook( __FILE__, 'mpb_activate_marzeotti_plugin_base' );
+register_deactivation_hook( __FILE__, 'mpb_deactivate_marzeotti_plugin_base' );
 
 /**
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-require plugin_dir_path( __FILE__ ) . 'includes/class-marzeotti-plugin-base.php';
+require plugin_dir_path( __FILE__ ) . 'includes/class-mpb-marzeotti-plugin-base.php';
 
 /**
  * Begins execution of the plugin.
@@ -72,10 +72,10 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-marzeotti-plugin-base.php'
  *
  * @since    1.0.0
  */
-function run_marzeotti_plugin_base() {
+function mpb_run_marzeotti_plugin_base() {
 
-	$plugin = new Marzeotti_Plugin_Base();
+	$plugin = new MPB_Marzeotti_Plugin_Base();
 	$plugin->run();
 
 }
-run_marzeotti_plugin_base();
+mpb_run_marzeotti_plugin_base();

@@ -5,8 +5,8 @@
  * @link       https://markmarzeotti.com
  * @since      1.0.0
  *
- * @package    Marzeotti_Plugin_Base
- * @subpackage Marzeotti_Plugin_Base/includes
+ * @package    MPB_Marzeotti_Plugin_Base
+ * @subpackage MPB_Marzeotti_Plugin_Base/includes
  */
 
 /**
@@ -16,11 +16,11 @@
  * the plugin, and register them with the WordPress API. Call the
  * run function to execute the list of actions and filters.
  *
- * @package    Marzeotti_Plugin_Base
- * @subpackage Marzeotti_Plugin_Base/includes
+ * @package    MPB_Marzeotti_Plugin_Base
+ * @subpackage MPB_Marzeotti_Plugin_Base/includes
  * @author     Mark Marzeotti <mark@markmarzeotti.com>
  */
-class Marzeotti_Plugin_Base_Loader {
+class MPB_Marzeotti_Plugin_Base_Loader {
 
 	/**
 	 * The array of actions registered with WordPress.

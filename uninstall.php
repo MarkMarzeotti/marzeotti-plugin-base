@@ -21,7 +21,7 @@
  * @link       https://markmarzeotti.com
  * @since      1.0.0
  *
- * @package    Marzeotti_Plugin_Base
+ * @package    MPB_Marzeotti_Plugin_Base
  */
 
 // If uninstall not called from WordPress, then exit.
