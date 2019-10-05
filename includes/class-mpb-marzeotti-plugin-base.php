@@ -86,7 +86,7 @@ class MPB_Marzeotti_Plugin_Base {
 	 * Include the following files that make up the plugin:
 	 *
 	 * - MPB_Marzeotti_Plugin_Base_Loader. Orchestrates the hooks of the plugin.
-	 * - MPB_Marzeotti_Plugin_Base_i18n. Defines internationalization functionality.
+	 * - MPB_Marzeotti_Plugin_Base_I18n. Defines internationalization functionality.
 	 * - MPB_Marzeotti_Plugin_Base_Admin. Defines all hooks for the admin area.
 	 * - MPB_Marzeotti_Plugin_Base_Public. Defines all hooks for the public side of the site.
 	 *
@@ -136,7 +136,7 @@ class MPB_Marzeotti_Plugin_Base {
 	 */
 	private function set_locale() {
 
-		$plugin_i18n = new MPB_Marzeotti_Plugin_Base_i18n();
+		$plugin_i18n = new MPB_Marzeotti_Plugin_Base_I18n();
 
 		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
 

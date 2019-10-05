@@ -23,8 +23,7 @@
  * @subpackage MPB_Marzeotti_Plugin_Base/includes
  * @author     Mark Marzeotti <mark@markmarzeotti.com>
  */
-class MPB_Marzeotti_Plugin_Base_i18n {
-
+class MPB_Marzeotti_Plugin_Base_I18n {
 
 	/**
 	 * Load the plugin text domain for translation.
@@ -40,7 +39,5 @@ class MPB_Marzeotti_Plugin_Base_i18n {
 		);
 
 	}
-
-
 
 }
