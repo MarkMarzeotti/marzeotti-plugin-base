@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./assets/scss/assets/scss/public.scss"],"names":[],"mappings":"AAEA,GACC,wBAAyB","file":"./public/css/public.css","sourcesContent":["@import 'partials/colors';\n\nh1 {\n\ttext-transform: uppercase;\n}\n\n\n\n// WEBPACK FOOTER //\n// ./assets/scss/assets/scss/public.scss"],"sourceRoot":""}

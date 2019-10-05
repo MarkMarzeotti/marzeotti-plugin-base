@@ -1,0 +1,35 @@
+{
+  "name": "marzeotti-plugin-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "bin": {
+    "webpack": "./node_modules/.bin/webpack"
+  },
+  "author": "Mark Marzeotti",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "babel-cli": "6.18.0",
+    "babel-loader": "6.2.5",
+    "babel-preset-env": "^1.6.1",
+    "braces": "^2.3.1",
+    "css-loader": "^3.2.0",
+    "cssnano": "^4.1.10",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^4.1.0",
+    "json-loader": "0.5.4",
+    "node-sass": "^4.12.0",
+    "postcss-import": "^11.0.0",
+    "postcss-loader": "^2.0.9",
+    "sass-loader": "4.0.2",
+    "style-loader": "0.13.1",
+    "url-loader": "^2.1.0",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.5"
+  }
+}
