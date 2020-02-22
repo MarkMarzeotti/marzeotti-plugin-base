@@ -1,35 +1,107 @@
 {
   "name": "marzeotti-plugin-base",
   "version": "1.0.0",
-  "description": "",
-  "main": "",
+  "private": true,
+	"browserslist": [
+		"> 1%",
+		"last 4 versions",
+		"Firefox ESR",
+		"not ie < 9"
+  ],
   "scripts": {
-    "start": "webpack --watch",
-    "build": "webpack",
-    "watch": "webpack --watch"
+    "start": "node scripts/start.js",
+    "build": "node scripts/build.js",
+    "webpack": "webpack --watch"
   },
   "bin": {
     "webpack": "./node_modules/.bin/webpack"
   },
   "author": "Mark Marzeotti",
-  "devDependencies": {
+  "dependencies": {
     "autoprefixer": "^9.6.1",
     "babel-cli": "6.18.0",
-    "babel-loader": "6.2.5",
-    "babel-preset-env": "^1.6.1",
+    "babel-core": "^6.25.0",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^7.1.1",
+    "babel-preset-cgb": "^1.7.0",
     "braces": "^2.3.1",
+    "cgb-dev-utils": "^1.6.0",
+    "chalk": "^2.3.0",
+    "cross-env": "^5.0.1",
+    "cross-spawn": "^5.1.0",
     "css-loader": "^3.2.0",
     "cssnano": "^4.1.10",
+    "eslint": "^4.15.0",
+    "eslint-config-wordpress": "^2.0.0",
+    "eslint-plugin-jest": "^21.6.1",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "eslint-plugin-wordpress": "^0.1.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^4.1.0",
+    "filesize": "^3.5.11",
+    "fs-extra": "^5.0.0",
+    "gzip-size": "^4.1.0",
+    "inquirer": "^5.0.0",
     "json-loader": "0.5.4",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.7.2",
+    "ora": "^1.3.0",
     "postcss-import": "^11.0.0",
-    "postcss-loader": "^2.0.9",
-    "sass-loader": "4.0.2",
-    "style-loader": "0.13.1",
+    "postcss-loader": "^2.0.10",
+    "raw-loader": "^0.5.1",
+    "resolve-pkg": "^1.0.0",
+    "sass-loader": "^6.0.6",
+    "shelljs": "^0.8.0",
+    "style-loader": "^0.23.1",
+    "update-notifier": "^2.3.0",
     "url-loader": "^2.1.0",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.5"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "modules": false,
+          "targets": {
+            "browsers": [
+              "last 2 Chrome versions",
+              "last 2 Firefox versions",
+              "last 2 Safari versions",
+              "last 2 iOS versions",
+              "last 1 Android version",
+              "last 1 ChromeAndroid version",
+              "ie 11"
+            ]
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      [
+        "transform-object-rest-spread"
+      ],
+      [
+        "transform-object-rest-spread",
+        {
+          "useBuiltIns": true
+        }
+      ],
+      [
+        "transform-react-jsx",
+        {
+          "pragma": "wp.element.createElement"
+        }
+      ],
+      [
+        "transform-runtime",
+        {
+          "helpers": false,
+          "polyfill": false,
+          "regenerator": true
+        }
+      ]
+    ]
   }
 }

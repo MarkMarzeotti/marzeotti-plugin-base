@@ -95,7 +95,7 @@ class MPB_Marzeotti_Plugin_Base_Public {
 		 * class.
 		 */
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/public.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/public.build.js', array( 'jquery' ), $this->version, false );
 
 	}
 
