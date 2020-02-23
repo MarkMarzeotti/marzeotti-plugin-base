@@ -121,6 +121,11 @@ class MPB_Marzeotti_Plugin_Base {
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-mpb-marzeotti-plugin-base-public.php';
 
+		/**
+		 * The class responsible for registering Gutenberg blocks.
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-mpb-marzeotti-plugin-base-blocks.php';
+
 		$this->loader = new MPB_Marzeotti_Plugin_Base_Loader();
 
 	}
@@ -151,10 +156,14 @@ class MPB_Marzeotti_Plugin_Base {
 	 */
 	private function define_admin_hooks() {
 
-		$plugin_admin = new MPB_Marzeotti_Plugin_Base_Admin( $this->get_plugin_name(), $this->get_version() );
+		$plugin_admin  = new MPB_Marzeotti_Plugin_Base_Admin( $this->get_plugin_name(), $this->get_version() );
+		$plugin_blocks = new MPB_Marzeotti_Plugin_Base_Blocks();
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
+		$this->loader->add_action( 'init', $plugin_blocks, 'register_block_assets' );
+		$this->loader->add_filter( 'allowed_block_types', $plugin_blocks, 'allowed_block_types', 100 );
+		$this->loader->add_filter( 'block_categories', $plugin_blocks, 'register_block_category', 11 );
 
 	}
 
@@ -168,9 +177,11 @@ class MPB_Marzeotti_Plugin_Base {
 	private function define_public_hooks() {
 
 		$plugin_public = new MPB_Marzeotti_Plugin_Base_Public( $this->get_plugin_name(), $this->get_version() );
+		$plugin_blocks = new MPB_Marzeotti_Plugin_Base_Blocks();
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
+		$this->loader->add_action( 'init', $plugin_blocks, 'register_block_assets' );
 
 	}
 

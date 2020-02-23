@@ -79,8 +79,3 @@ function mpb_run_marzeotti_plugin_base() {
 
 }
 mpb_run_marzeotti_plugin_base();
-
-/**
- * Block Initializer.
- */
-require_once plugin_dir_path( __FILE__ ) . 'src/init.php';
